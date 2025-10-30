@@ -1,0 +1,233 @@
+{
+  "main": {
+    "id": "1f244c212ef9f2b7",
+    "type": "split",
+    "children": [
+      {
+        "id": "f9efa96929aeca0d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7da97593ae616998",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/Текст запроса.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Текст запроса"
+            }
+          },
+          {
+            "id": "89d0cf4a66e272ea",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Java Complete Full Reference.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Java Complete Full Reference"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "be623547bff13ed6",
+    "type": "split",
+    "children": [
+      {
+        "id": "c36e4bc923cc9bda",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a1a1c94d9cf003c9",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "32db767015691c66",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "239b8a5d66f12fa6",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ebb228568bd3634d",
+    "type": "split",
+    "children": [
+      {
+        "id": "24c475d360e498ee",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "118be31b7529b72e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Marine Survey KnowledgeBase.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Marine Survey KnowledgeBase"
+            }
+          },
+          {
+            "id": "b7aea2e11ddbdb13",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Marine Survay.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Marine Survay"
+            }
+          },
+          {
+            "id": "0250b1d949cfac0a",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "43b5f98b86085c5f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Java Complete Full Reference.md",
+                "followCursor": false,
+                "showSearch": true,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Java Complete Full Reference"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:Create new base": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "89d0cf4a66e272ea",
+  "lastOpenFiles": [
+    "Notes/Ch03/3.10 Literals (to Format).md",
+    "Notes/Ch01/1.3 Notation.md",
+    "Java Complete Full Reference.md",
+    "Notes/Ch04/Chapter 4. Types, Values, and Variables.md",
+    "Notes/Ch04/4.1/4.1 The Kinds of Types and Values (to format).md",
+    "Notes/Ch04/4.1/4.1.0 Overview — Общий обзор видов типов и значений.md",
+    "Notes/Ch03/Chapter 3. Lexical Structure (to Check).md",
+    "Notes/Ch02/Chapter 2. Grammars (To Check).md",
+    "Notes/Ch01/Chapter 1. Introduction.md",
+    "Notes/Ch01/1.4 References (to format).md",
+    "Notes/Ch01/1.2 Example Programs.md",
+    "Notes/Ch01/1.1 Organization of the Specification.md",
+    "Notes/Ch58/58.3. Jackson (FasterXML Jackson) (to format and check).md",
+    "Notes/Текст запроса.md",
+    "Notes/Ch63/63.6/63.6 Writing Documentation with Javadoc — tags, doclets, linking (to split and format).md",
+    "58.3.8. Конфигурация, настройки и кастомизация ObjectMapper (to format).md",
+    "58.3.9. Производительность, кеширование и оптимизация Jackson (to format).md",
+    "58.3.6. Работа с JsonNode и мост между Tree Model и Data Binding (to format).md",
+    "58.3.7. Потоковые источники и приёмники (Streaming API - JsonParser и JsonGenerator) (to format).md",
+    "58.3.5. Полиморфная (де)сериализация, типы и безопасность (to format).md",
+    "58.3.4. Модули и настройка Jackson (to format).md",
+    "58.3.3. Аннотации Jackson (to format).md",
+    "58.3.2. Data Binding - ObjectMapper, ObjectReader, ObjectWriter (to format).md",
+    "58.3.1 Архитектура Jackson - core, streaming, tree, databind (to format).md",
+    "Notes/Ch58/Chapter 58. JSON Processing and Data Binding (Jackson, Gson, Jakarta JSON).md",
+    "Notes/Ch58/58.2. Overview of JSON Libraries (to start).md",
+    "Notes/Ch63/63.6",
+    "Notes/Ch63",
+    "Notes/Ch04/4.1/output.txt",
+    "Notes/Ch04/4.2",
+    "Notes/BackUp",
+    "Notes/Ch04/4.1",
+    "Notes/Ch58",
+    "Notes/Ch04",
+    "Notes/Ch03",
+    "Notes/Ch02",
+    "Attachments/Pasted image 20251001131331.png",
+    "Attachments/Pasted image 20250918172141.png",
+    "Attachments/Pasted image 20250918171311.png",
+    "Attachments/Pasted image 20250812100518.png",
+    "Attachments/Pasted image 20250807192817.png",
+    "Untitled.canvas"
+  ]
+}
