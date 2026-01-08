@@ -13,20 +13,6 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Текст запроса.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Текст запроса"
-            }
-          },
-          {
-            "id": "89d0cf4a66e272ea",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "Java Complete Full Reference.md",
                 "mode": "source",
                 "source": false
@@ -35,8 +21,7 @@
               "title": "Java Complete Full Reference"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -68,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#Notation",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -185,34 +170,37 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "89d0cf4a66e272ea",
+  "active": "7da97593ae616998",
   "lastOpenFiles": [
-    "Notes/Ch03/3.10 Literals (to Format).md",
-    "Notes/Ch01/1.3 Notation.md",
+    "Notes/Ch03/3.10/3.10 Literals (OK).md",
+    "Notes/Ch03/3.10/3.10.6 The null Literal (OK).md",
+    "Notes/Ch03/3.10/3.10.1 Integer Literals (OK).md",
+    "Notes/Ch03/Chapter 3. Lexical Structure.md",
     "Java Complete Full Reference.md",
-    "Notes/Ch04/Chapter 4. Types, Values, and Variables.md",
-    "Notes/Ch04/4.1/4.1 The Kinds of Types and Values (to format).md",
-    "Notes/Ch04/4.1/4.1.0 Overview — Общий обзор видов типов и значений.md",
-    "Notes/Ch03/Chapter 3. Lexical Structure (to Check).md",
     "Notes/Ch02/Chapter 2. Grammars (To Check).md",
-    "Notes/Ch01/Chapter 1. Introduction.md",
-    "Notes/Ch01/1.4 References (to format).md",
-    "Notes/Ch01/1.2 Example Programs.md",
-    "Notes/Ch01/1.1 Organization of the Specification.md",
-    "Notes/Ch58/58.3. Jackson (FasterXML Jackson) (to format and check).md",
+    "Notes/Ch02/2.3 The Semantic Constraints.md",
+    "Notes/Ch02/2.2. The Lexical Grammar.md",
+    "Notes/Ch02/2.1. The Syntactic Grammar.md",
+    "Notes/Ch01/Chapter 1. Introduction (OK).md",
+    "Notes/Ch01/1.4 References (OK).md",
+    "Notes/Ch01/1.3 Notation (OK).md",
+    "Notes/Ch01/1.2 Example Programs (OK).md",
+    "Notes/Ch01/1.1 Organization of the Specification (OK).md",
     "Notes/Текст запроса.md",
-    "Notes/Ch63/63.6/63.6 Writing Documentation with Javadoc — tags, doclets, linking (to split and format).md",
-    "58.3.8. Конфигурация, настройки и кастомизация ObjectMapper (to format).md",
-    "58.3.9. Производительность, кеширование и оптимизация Jackson (to format).md",
-    "58.3.6. Работа с JsonNode и мост между Tree Model и Data Binding (to format).md",
-    "58.3.7. Потоковые источники и приёмники (Streaming API - JsonParser и JsonGenerator) (to format).md",
-    "58.3.5. Полиморфная (де)сериализация, типы и безопасность (to format).md",
-    "58.3.4. Модули и настройка Jackson (to format).md",
-    "58.3.3. Аннотации Jackson (to format).md",
-    "58.3.2. Data Binding - ObjectMapper, ObjectReader, ObjectWriter (to format).md",
-    "58.3.1 Архитектура Jackson - core, streaming, tree, databind (to format).md",
-    "Notes/Ch58/Chapter 58. JSON Processing and Data Binding (Jackson, Gson, Jakarta JSON).md",
-    "Notes/Ch58/58.2. Overview of JSON Libraries (to start).md",
+    "Notes/Ch04/4.1/4.1.0 Overview — Общий обзор видов типов и значений.md",
+    "Notes/Ch04/4.1/4.1 The Kinds of Types and Values (to Format).md",
+    "Notes/Ch04/4.1/4.1.1 Definition of Type — Определение типа.md",
+    "Notes/Ch04/4.2/4.2 Primitive Types and Values.md",
+    "Notes/Ch04/Chapter 4. Types, Values, and Variables.md",
+    "Notes/Ch04/4.2/4.2.11 Operations on Primitive Types (to Format).md",
+    "Notes/Ch04/4.2/4.2.16 Practical Usage Guidelines (to Format).md",
+    "Notes/Ch04/4.2/4.2.14 Default Values and Initialization (to Format).md",
+    "Notes/Ch04/4.2/4.2.15 Special Cases and Edge Behavior (to Format).md",
+    "Notes/Ch04/4.2/4.2.7 Floating-Point Types  (to Format).md",
+    "Notes/Ch04/4.2/4.2.13 Boxing and Unboxing (to Format).md",
+    "Notes/Ch03/3.10",
+    "Notes/Ch13",
+    "Notes/Ch58/58.3",
     "Notes/Ch63/63.6",
     "Notes/Ch63",
     "Notes/Ch04/4.1/output.txt",
@@ -220,9 +208,6 @@
     "Notes/BackUp",
     "Notes/Ch04/4.1",
     "Notes/Ch58",
-    "Notes/Ch04",
-    "Notes/Ch03",
-    "Notes/Ch02",
     "Attachments/Pasted image 20251001131331.png",
     "Attachments/Pasted image 20250918172141.png",
     "Attachments/Pasted image 20250918171311.png",

@@ -1,12 +1,8 @@
 2025-10-22 21:49
-Tags: #JSON #DataBinding #Jackson #Gson #Jakarta #toCheck 
+Tags: #JSON #DataBinding #Jackson #Gson #Jakarta #ObjectMapper #toCheck 
 
-## [[58.1. Introduction to JSON in Java (OK)]]
-
-
+## [[58.1. Introduction to JSON in Java]]
 ## [[58.2. Overview of JSON Libraries (to start)]]
-
-
 ## [[58.3. Jackson (FasterXML Jackson) (to format and check)]]
 
 

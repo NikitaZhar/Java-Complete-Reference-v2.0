@@ -13,12 +13,10 @@ Tags: #Content
 [[Текст запроса]]
 
 # Part I. Java Language Specification (JLS), Java SE 25
-## [[Chapter 1. Introduction]]
-## [[Chapter 2. Grammars (To Check)]]
-## [[Chapter 3. Lexical Structure (to Check)]]
-
-
-## [[Chapter 4. Types, Values, and Variables]]
+### [[Chapter 1. Introduction (OK)]]
+### [[Chapter 2. Grammars (To Check)]]
+### [[Chapter 3. Lexical Structure]]
+### [[Chapter 4. Types, Values, and Variables]]
 
 
 ### Chapter 5. Conversions and Contexts
@@ -83,9 +81,7 @@ Tags: #Content
 12.2 Canonical Constructors  
 12.3 Compact Constructors
 
-### Chapter 13. Arrays
-13.1 Array Types  
-13.2 Array Creation and Access
+### [[Chapter 13. Arrays]]
 
 ### Chapter 14. Blocks, Statements, and Patterns
 14.1 Blocks  
@@ -250,7 +246,7 @@ _(покрывает языковые средства и стандартные
 41.1 Class declaration, constructors, initialization blocks  
 41.2 Inheritance, `super()`, `final`, `sealed`, `permits`  
 41.3 Abstract classes and interfaces (including default and static methods)
-## [[41.4 Overloading vs overriding]]
+### [[41.4 Overloading vs overriding]]
 41.5 Nested, static nested, inner, local, and anonymous classes
 
 ### Chapter 42. Exceptions and Error Handling
@@ -295,7 +291,7 @@ _(практическая работа с ключевыми библиотек
 ### Chapter 52. Functional Programming and Streams
 52.1 Lambda expressions — syntax and scoping  
 52.2 Method references
-## [[52.3 Built-in functional interfaces (Predicate, Function, Supplier, Consumer, Comparator)]]  
+### [[52.3 Built-in functional interfaces (Predicate, Function, Supplier, Consumer, Comparator)]]
 52.4 Streams API — creation, intermediate and terminal operations  
 52.5 Primitive streams and OptionalInt/Long/Double  
 52.6 Collectors, grouping, partitioning, summarizing  
@@ -345,7 +341,7 @@ _(практическая работа с ключевыми библиотек
 57.5 Internationalized formatting of dates, numbers, messages
 
 
-## [[Chapter 58. JSON Processing and Data Binding (Jackson, Gson, Jakarta JSON)]]
+### [[Chapter 58. JSON Processing and Data Binding (Jackson, Gson, Jakarta JSON)]]
 
 ### [[Chapter 58. JSON Processing and Data Binding (Jackson, Gson, Jakarta JSON) - OLD]]
 
@@ -385,7 +381,7 @@ _(дополняет профессиональные аспекты)_
 63.3 Using javadoc and the standard doclet
 63.4 Debugging (jdb and IDE tools)  
 63.5 Monitoring and profiling with jcmd, jfr, jconsole, jmap, jstat, jhsdb
-## [[63.6 Writing Documentation with Javadoc — tags, doclets, linking (to split and format)]]
+### [[63.6 Writing Documentation with Javadoc — tags, doclets, linking (to split and format)]]
 63.7 JVM Monitoring Tools — `jps`, `jstack`, `jstat`, `jmap`, `jcmd`, `jhsdb`
 63.8 Profiling and Observability — JFR, JMC, async-profiler
 63.9 JIT Compilation and Tiered Optimization Overview
