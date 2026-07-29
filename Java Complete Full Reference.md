@@ -10,14 +10,11 @@ Tags: #Content
 >Mughal. Oracle Certified Professional Java SE 17 Developer Exam 1Z0-829
 >Mughal. Oracle Certified Professional Java SE 21 Developer Exam 1Z0-830
 
-[[Текст запроса]]
 
 # Part I. Java Language: Specification-Based Reference
-### [[Chapter 1. Introduction (OK)]]
-*(без изменений)*
+### [[Chapter 1. Introduction]]
+### [[Chapter 2. Grammars]]
 
-### [[Chapter 2. Grammars (To Check)]]
-*(без изменений, ждёт доработки по вашим пометкам)*
 
 ### [[Chapter 3. Lexical Structure]]
 *(без изменений)*

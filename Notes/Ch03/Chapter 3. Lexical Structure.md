@@ -10,7 +10,7 @@ Tags: #LexicalStructure #toCheck
 3.7 Comments
 3.8 Identifiers
 3.9 Keywords
-## [[3.10 Literals (OK)]]
+## [[3.10 Literals]]
 3.11 Separators  
 3.12 Operators
 

@@ -7,10 +7,10 @@ Tags: #Content #Audit
 
 ## 1. Пересобранное оглавление Part I. Java Language Reference
 
-### [[Chapter 1. Introduction (OK)]]
+### [[Chapter 1. Introduction]]
 *(без изменений)*
 
-### [[Chapter 2. Grammars (To Check)]]
+### [[Chapter 2. Grammars]]
 *(без изменений, ждёт доработки по вашим пометкам)*
 
 ### [[Chapter 3. Lexical Structure]]
