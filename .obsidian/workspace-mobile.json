@@ -1,14 +1,14 @@
 {
   "main": {
-    "id": "4c089193d8d07821",
+    "id": "5c7b939c11bd4e46",
     "type": "split",
     "children": [
       {
-        "id": "d6abc10c7537ea29",
+        "id": "5a5da310e8674bff",
         "type": "tabs",
         "children": [
           {
-            "id": "ee201582e86264ad",
+            "id": "cb521dae8bd434ea",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -27,11 +27,11 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "4b2ce27a31e72d6f",
+    "id": "d7721b3e27bb5a73",
     "type": "mobile-drawer",
     "children": [
       {
-        "id": "f6501596072f291b",
+        "id": "1d46482e2bacc364",
         "type": "leaf",
         "state": {
           "type": "file-explorer",
@@ -44,12 +44,12 @@
         }
       },
       {
-        "id": "d5bf116e1d2b59ec",
+        "id": "0204162633813ad7",
         "type": "leaf",
         "state": {
           "type": "search",
           "state": {
-            "query": "tag:#PrimitiveTypes",
+            "query": "",
             "matchingCase": false,
             "explainSearch": false,
             "collapseAll": false,
@@ -61,7 +61,7 @@
         }
       },
       {
-        "id": "bbfede9c9078b3f1",
+        "id": "d9793edafccdd4f1",
         "type": "leaf",
         "state": {
           "type": "tag",
@@ -76,7 +76,7 @@
         }
       },
       {
-        "id": "55c6a0aba7b03cc6",
+        "id": "1abda54358f95d88",
         "type": "leaf",
         "state": {
           "type": "bookmarks",
@@ -89,17 +89,17 @@
     "currentTab": 0
   },
   "right": {
-    "id": "95502d69fbc016ad",
+    "id": "4b3e0b1cbf2cde61",
     "type": "mobile-drawer",
     "children": [
       {
-        "id": "7c6935270981b582",
+        "id": "a6261de90695309f",
         "type": "leaf",
         "state": {
           "type": "backlink",
           "state": {
-            "file": "1.1.1 Compilation Unit - минимальная единица кода.md",
-            "collapseAll": true,
+            "file": "Java Complete Full Reference.md",
+            "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
             "showSearch": false,
@@ -112,12 +112,11 @@
         }
       },
       {
-        "id": "49be97ac87894477",
+        "id": "8868407ccd141d90",
         "type": "leaf",
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "Notes/Морской сюрвейер (Marine surveyor).md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           },
@@ -126,12 +125,11 @@
         }
       },
       {
-        "id": "3a71d19dee769ad6",
+        "id": "7b0b3e33c140cd3e",
         "type": "leaf",
         "state": {
           "type": "outline",
           "state": {
-            "file": "Java Complete Full Reference.md",
             "followCursor": false,
             "showSearch": false,
             "searchQuery": ""
@@ -141,52 +139,27 @@
         }
       }
     ],
-    "currentTab": 2
+    "currentTab": 0
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
     }
   },
-  "active": "ee201582e86264ad",
+  "active": "cb521dae8bd434ea",
   "lastOpenFiles": [
-    "BackUp/Chapter 58. JSON Processing and Data Binding (Jackson, Gson, Jakarta JSON) - OLD.md",
+    "Notes/Текст запроса.md",
     "Java Complete Full Reference.md",
+    "Notes/Ch63/63.6/63.6 Writing Documentation with Javadoc — tags, doclets, linking (to split and format).md",
+    "Notes/Ch58/Chapter 58. JSON Processing and Data Binding (Jackson, Gson, Jakarta JSON).md",
     "41.4 Overloading vs overriding.md",
-    "52.3 Built-in functional interfaces (Predicate, Function, Supplier, Consumer, Comparator).md",
     "Notes/Ch13/Chapter 13. Arrays.md",
-    "Notes/Ch13/13.8 Объект Class для массива (Class Objects for Arrays).md",
-    "Notes/Ch13/13.4 Доступ к элементам массива (Array Access).md",
-    "Notes/Ch03/Chapter 3. Lexical Structure.md",
-    "Notes/Ch03/3.10/3.10 Literals (OK).md",
-    "Notes/Ch04/Chapter 4. Types, Values, and Variables.md",
-    "Notes/Ch04/4.1/4.1 The Kinds of Types and Values.md",
-    "Notes/Ch04/4.1/4.1.0 Overview — Общий обзор видов типов и значений.md",
-    "Notes/Ch02/Chapter 2. Grammars (To Check).md",
-    "Notes/Ch03/Chapter 3. Lexical Structure (to Check).md",
-    "Notes/Ch03/3.10/3.10 Literals (to Format).md",
-    "Notes/Ch03/3.10/3.10.1 Integer Literals.md",
-    "Notes/Ch13/13.11 Arrays versus Collections.md",
-    "Notes/Ch13/13.3 Создание массивов (Array Creation).md",
-    "Notes/Ch13/13.1 Типы массивов (Array Types).md",
-    "Notes/Ch13/13.5 ArrayStoreException.md",
-    "Notes/Ch13/13.2 Переменные массивов (Array Variables).md",
-    "Notes/Ch13/13.14 Memory Model & Concurrency — РАСШИРИТЬ.md",
-    "Notes/Ch13/13.17 Summary.md",
-    "Notes/Ch13/13.6 Инициализаторы массивов (Array Initializers).md",
-    "Notes/Ch13/13.15 API Patterns & Anti-patterns — ДОБАВИТЬ.md",
-    "Notes/Ch13/13.9 Массив символов не является `String`.md",
-    "Notes/Ch13",
-    "Attachments/Pasted image 20250918171311.png",
-    "Attachments/Pasted image 20250918172141.png",
-    "Oracle Certified Professional 1Z0-829 Copy.pdf",
-    "Notes/Core_Topics",
-    "Untitled.canvas"
+    "Notes/Ch13/13.5 ArrayStoreException.md"
   ]
 }

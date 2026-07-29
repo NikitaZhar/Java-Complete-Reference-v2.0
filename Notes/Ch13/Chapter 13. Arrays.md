@@ -1,7 +1,6 @@
 2025-11-04 11:24
 Tags: #Array
 
-
 > «In the Java programming language arrays are objects (§4.3.1), are dynamically created, and may be assigned to variables of type `Object`.» ([Oracle Docs](https://docs.oracle.com/javase/specs/jls/se7/html/jls-10.html?utm_source=chatgpt.com "Chapter 10. Arrays"))
 > 
 > Более формально:  

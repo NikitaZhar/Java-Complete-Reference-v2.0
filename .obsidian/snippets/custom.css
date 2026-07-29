@@ -230,3 +230,18 @@ strong {
   fill: white !important;
 }
 
+/* ===== ВНУТРЕННИЕ ССЫЛКИ: EDIT = PREVIEW ===== */
+
+/* Основной текст */
+.cm-s-obsidian span.cm-link,
+.cm-s-obsidian span.cm-hmd-internal-link {
+  color: #aec7f6 !important;
+  text-decoration: none !important;
+  font-weight: normal !important;
+}
+
+/* Hover — как в preview */
+.cm-s-obsidian span.cm-link:hover,
+.cm-s-obsidian span.cm-hmd-internal-link:hover {
+  text-decoration: underline !important;
+}

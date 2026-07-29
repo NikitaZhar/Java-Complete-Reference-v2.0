@@ -3,21 +3,27 @@ Tags: #Content
 
 *(база: Java SE 25, состояние на 29.09.2025)*
 
-> Источники структуры: 
-> Java SE Specifications (JLS/JVMS, SE 25), API Overview (SE 25), JDK 25 Documentation (Guides, Tools, Security, Specs).
-> Boyarsky. Oracle Certified Professional Java SE 17 Developer Exam 1Z0-829
-> Boyarsky. Oracle Certified Professional Java SE 21 Developer Exam 1Z0-830
-> Mughal. Oracle Certified Professional Java SE 17 Developer Exam 1Z0-829
-> Mughal. Oracle Certified Professional Java SE 21 Developer Exam 1Z0-830
+>Источники структуры: 
+>Java SE Specifications (JLS/JVMS, SE 25), API Overview (SE 25), JDK 25 Documentation (Guides, Tools, Security, Specs).
+>Boyarsky. Oracle Certified Professional Java SE 17 Developer Exam 1Z0-829
+>Boyarsky. Oracle Certified Professional Java SE 21 Developer Exam 1Z0-830
+>Mughal. Oracle Certified Professional Java SE 17 Developer Exam 1Z0-829
+>Mughal. Oracle Certified Professional Java SE 21 Developer Exam 1Z0-830
 
 [[Текст запроса]]
 
-# Part I. Java Language Specification (JLS), Java SE 25
+# Part I. Java Language: Specification-Based Reference
 ### [[Chapter 1. Introduction (OK)]]
-### [[Chapter 2. Grammars (To Check)]]
-### [[Chapter 3. Lexical Structure]]
-### [[Chapter 4. Types, Values, and Variables]]
+*(без изменений)*
 
+### [[Chapter 2. Grammars (To Check)]]
+*(без изменений, ждёт доработки по вашим пометкам)*
+
+### [[Chapter 3. Lexical Structure]]
+*(без изменений)*
+
+### [[Chapter 4. Types, Values, and Variables]]
+*(без изменений)*
 
 ### Chapter 5. Conversions and Contexts
 5.1 Conversion Contexts  
@@ -28,14 +34,16 @@ Tags: #Content
 5.6 Unboxing Conversion  
 5.7 Value Set Conversion  
 5.8 Widening and Narrowing Reference Conversions
+5.9 **(NEW)** Типичные ошибки: неявные сужающие контексты, потеря точности при `float`/`double`, `NaN`-ловушки в сравнениях, boxing в switch/generics
 
-### Chapter 6. Names
+### Chapter 6. Names, Scope, and Access Control
 6.1 Declarations  
 6.2 Names and Identifiers  
 6.3 Scopes of Declarations  
 6.4 Shadowing and Hiding  
 6.5 Fully Qualified Names  
 6.6 Access Control
+6.7 **(NEW)** Типичные ошибки: package-private vs protected, доступ через наследование в другом пакете, конфликт `import static` и локального имени
 
 ### Chapter 7. Packages and Modules
 7.1 Packages  
@@ -43,6 +51,8 @@ Tags: #Content
 7.3 Package Declarations  
 7.4 Module Declarations  
 7.5 Visibility Rules
+7.6 **(NEW)** Типичные ошибки модульной системы (split packages, недостижимость через `requires transitive`) — краткая версия, глубокий разбор см. Part VI, Chapter 60
+**Вопрос - а зачем тут помещать кратнкую версию, если есть раздел с полным описание?**
 
 ### Chapter 8. Classes
 8.1 Class Declarations  
@@ -59,29 +69,43 @@ Tags: #Content
 8.6 Instance Initializers  
 8.7 Static Initializers  
 8.8 Enclosing Instances
+8.9 **(NEW — заполняет пробел)** Sealed Classes: `sealed`, `permits`, ограничения на иерархию
+8.10 **(NEW — заполняет пробел)** Nested, Inner, Local, and Anonymous Classes: захват переменных, `Outer.this`, synthetic accessors — сейчас этот материал есть только практически в Part IV (41.5), на уровне спецификации отсутствует
+8.11 **(NEW)** Типичные ошибки и best practices класса: телескопические конструкторы, утечка `this` в конструкторе, некорректная перегрузка vs переопределение
 
 ### Chapter 9. Interfaces
 9.1 Interface Declarations  
 9.2 Interface Members  
 9.3 Default Methods  
 9.4 Functional Interfaces
+9.5 **(NEW — заполняет пробел)** Sealed Interfaces
+9.6 **(NEW — заполняет пробел)** Private Interface Methods (Java 9+) — не был упомянут вообще
+9.7 **(NEW)** Типичные ошибки: diamond-конфликт default-методов, случайное превращение интерфейса в функциональный
 
 ### Chapter 10. Enums
 10.1 Enum Types  
 10.2 Enum Members  
 10.3 Special Methods of Enums
+10.4 **(NEW)** Enum как Singleton; EnumMap/EnumSet; enum с абстрактными методами на константах
+10.5 **(NEW)** Типичные ошибки: сериализация enum, `ordinal()` как бизнес-значение, `valueOf`-исключения
 
 ### Chapter 11. Annotations
 11.1 Annotation Types  
 11.2 Annotation Declarations  
 11.3 Annotation Processing
+11.4 **(NEW)** Мета-аннотации: `@Retention`, `@Target`, `@Repeatable`, `@Inherited`
+11.5 **(NEW)** Типичные ошибки и best practices: аннотации в рантайме vs compile-time, злоупотребление аннотациями вместо кода
 
 ### Chapter 12. Records
 12.1 Record Declarations  
 12.2 Canonical Constructors  
 12.3 Compact Constructors
+12.4 **(NEW)** Records и Pattern Matching (деконструкция) — перекрёстная ссылка на 14.7 / 22.3
+12.5 **(NEW)** Records vs классические POJO/Lombok: когда уместны, когда нет
+12.6 **(NEW)** Типичные ошибки: мутабельные поля внутри record, отсутствие валидации в компактном конструкторе, record и наследование (implements-only)
 
 ### [[Chapter 13. Arrays]]
+*(без изменений — эталонный шаблон главы)*
 
 ### Chapter 14. Blocks, Statements, and Patterns
 14.1 Blocks  
@@ -91,8 +115,10 @@ Tags: #Content
 14.5 Loops (while, do, for)  
 14.6 Break, Continue, and Return  
 14.7 Pattern Matching Constructs
+14.8 **(NEW — заполняет пробел)** Reachability of Statements (недостижимый код, пустые ветки, `while(true)` без `break`)
+14.9 **(NEW)** Типичные ошибки: dangling else, fall-through в классическом switch, потерянный `yield` в switch-выражении
 
-### Chapter 15. Expressions
+### Chapter 15. Expressions and Operators
 15.1 Primary Expressions  
 15.2 Class Instance Creation Expressions  
 15.3 Array Creation Expressions  
@@ -101,40 +127,76 @@ Tags: #Content
 15.6 Lambda Expressions  
 15.7 Conditional Expressions  
 15.8 Assignment Expressions
+15.9 **(NEW)** Порядок вычисления и побочные эффекты (evaluation order, short-circuit, side effects в аргументах)
+15.10 **(NEW)** Типичные ошибки: переполнение `int` без предупреждений, приоритет операторов, `++`/`--` в сложных выражениях
 
-### Chapter 16. Exceptions, Assertions, and Control Transfer
-16.1 Exception Types  
-16.2 try-catch-finally  
-16.3 throw Statements  
-16.4 assert Statements
+### Chapter 16. Definite Assignment and Reachability
+*(NEW ГЛАВА — заполняет пробел; сейчас DA/DU упомянуты только как «частая ловушка» в приложении к Chapter 1, без раскрытия)*
+16.1 Definite Assignment для локальных переменных
+16.2 DA в ветвлениях, циклах, try-catch-finally
+16.3 DA и переменные образцов (`instanceof`/`switch` patterns)
+16.4 DA и Effectively Final
+16.5 Типичные ошибки: «variable might not have been initialized», ловушки в тернарном оператore
 
-### Chapter 17. Threads and Locks
-17.1 The Java Memory Model  
-17.2 Synchronized Blocks  
-17.3 Volatile Variables  
-17.4 Final Fields and Initialization Safety
+### Chapter 17. Exceptions and Assertions
+*(было объединено с control transfer — control transfer перенесён в 14.6)*
+17.1 Exception Types (checked / unchecked / Error)
+17.2 try-catch-finally
+17.3 try-with-resources и подавленные исключения (suppressed)
+17.4 Multi-catch
+17.5 throw Statements
+17.6 assert Statements
+17.7 Философия checked vs unchecked: когда что выбирать
+17.8 Типичные ошибки: проглатывание исключений, исключение в finally маскирует исходное, catch(Exception e) как антипаттерн
 
-### Chapter 18. Generics
-18.1 Type Parameters  
-18.2 Generic Methods  
-18.3 Wildcards  
-18.4 Capture Conversion
+### Chapter 18. Execution: Loading, Linking, and Initialization
+*(NEW ГЛАВА — заполняет пробел; сейчас порядок инициализации не описан нигде системно, только упомянут в FAQ Chapter 1)*
+18.1 Три фазы: Loading → Linking → Initialization
+18.2 Что триггерит инициализацию класса
+18.3 Порядок статических инициализаторов и полей
+18.4 Class unloading; финализация (legacy) — перекрёстная ссылка на Cleaner API (Part IV, 43.3)
+18.5 Типичные ошибки: циклические зависимости статических полей, `ExceptionInInitializerError`, ленивая инициализация синглтонов
 
-### Chapter 19. Previews and Features
-19.1 Overview of Preview Features
-19.2 Pattern Matching for `switch` — evolution and preview stages
-19.3 Record Patterns — preview vs standard behavior
-19.4 String Templates (Preview in Java 21)
-19.5 Scoped Values (Preview in Java 21)
-19.6 Structured Concurrency (Incubating API overview)
-19.7 Preview-Feature Lifecycle and Migration Strategy
+### Chapter 19. Threads and Locks (Java Memory Model)
+19.1 The Java Memory Model
+19.2 Synchronized Blocks
+19.3 Volatile Variables
+19.4 Final Fields and Initialization Safety
+19.5 **(NEW)** Типичные ошибки на уровне памяти: publication без happens-before, ложные предположения о видимости — практическое применение API см. Part IV, Chapter 53
 
-### Chapter 20. Appendices
+### Chapter 20. Generics and Type Inference
+20.1 Type Parameters  
+20.2 Generic Methods  
+20.3 Wildcards  
+20.4 Capture Conversion
+20.5 **(NEW)** Type Erasure на практике: что теряется, что остаётся
+20.6 **(NEW)** Типичные ошибки: heap pollution, unchecked warnings, невозможность `new T()`, wildcard vs generic method
+
+### Chapter 21. Binary Compatibility
+*(NEW ГЛАВА — заполняет пробел; сейчас тема отсутствует полностью)*
+21.1 Что ломает бинарную совместимость, а что нет
+21.2 Source-compatible vs binary-compatible vs behavior-compatible изменения
+21.3 Практические рекомендации для авторов библиотек (перекрёстная ссылка на Part VI, Chapter 64 — API design)
+
+### Chapter 22. Previews and Features
+22.1 Overview of Preview Features
+22.2 Pattern Matching for `switch` — evolution and preview stages
+22.3 Record Patterns — preview vs standard behavior
+22.4 String Templates (Preview in Java 21)
+22.5 Scoped Values (Preview in Java 21)
+22.6 Structured Concurrency (Incubating API overview)
+22.7 Preview-Feature Lifecycle and Migration Strategy
+
+### Chapter 23. Appendices
 A. Formal Grammars  
 B. Index of Keywords  
 C. Bibliography
+D. **(NEW)** Таблица соответствия: главы этой книги ↔ параграфы официального JLS SE 25 (нужна, раз мы сознательно отошли от прямой нумерации — иначе теряется возможность быстрой сверки с первоисточником)
+E. **(NEW)** Сводная таблица «Since Java X»: в каком релизе появилась/финализирована каждая языковая фича, упомянутая в книге
 
 ## Part II. Java Virtual Machine Specification (JVMS), Java SE 25
+
+**Необходим такое же подробное оглавление для всех остальных частей**
 
 ### Chapter 1. Introduction
 1.1 Structure of the Specification  
@@ -343,9 +405,6 @@ _(практическая работа с ключевыми библиотек
 
 ### [[Chapter 58. JSON Processing and Data Binding (Jackson, Gson, Jakarta JSON)]]
 
-### [[Chapter 58. JSON Processing and Data Binding (Jackson, Gson, Jakarta JSON) - OLD]]
-
-
 ## Part VI. Advanced Java Topics
 _(дополняет профессиональные аспекты)_
 
@@ -386,4 +445,3 @@ _(дополняет профессиональные аспекты)_
 63.8 Profiling and Observability — JFR, JMC, async-profiler
 63.9 JIT Compilation and Tiered Optimization Overview
 63.10 GC Tuning Basics — collectors, ergonomics, options, common patterns
-
