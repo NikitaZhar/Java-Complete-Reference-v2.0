@@ -14,13 +14,11 @@ Tags: #Content
 # Part I. Java Language: Specification-Based Reference
 ### [[Chapter 1. Introduction]]
 ### [[Chapter 2. Grammars]]
-
-
 ### [[Chapter 3. Lexical Structure]]
-*(без изменений)*
+
 
 ### [[Chapter 4. Types, Values, and Variables]]
-*(без изменений)*
+
 
 ### Chapter 5. Conversions and Contexts
 5.1 Conversion Contexts  
