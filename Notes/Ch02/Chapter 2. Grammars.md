@@ -1,6 +1,6 @@
 ---
 created: 2025-10-07
-status: draft
+status: done
 part: "Part I"
 chapter: 2
 tags: [topic/grammars, src/jls]

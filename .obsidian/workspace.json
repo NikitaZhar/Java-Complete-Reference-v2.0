@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java Complete Full Reference.md",
+                "file": "Notes/Ch04/Chapter 4. Types, Values, and Variables.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Java Complete Full Reference"
+              "title": "Chapter 4. Types, Values, and Variables"
             }
           }
         ]
@@ -41,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -186,32 +188,32 @@
   },
   "active": "1a7e3c987bd4c8dd",
   "lastOpenFiles": [
-    "Notes/Ch03/Chapter 3. Lexical Structure.md",
-    "Notes/Ch03/3.5 Input Elements and Tokens.md",
-    "Java Complete Full Reference.md",
+    "Working Contract/Журнал аудита.md",
+    "Notes/Ch04/4.1/4.1 The Kinds of Types and Values.md",
     "Notes/Ch04/Chapter 4. Types, Values, and Variables.md",
+    "Java Complete Full Reference.md",
     "Notes/Ch04/4.2/4.2 Primitive Types and Values.md",
-    "Notes/Ch04/4.2/4.2.10 boolean (to Format).md",
-    "Notes/Ch03/3.13 Common Mistakes.md",
-    "Notes/Ch03/3.10/3.10 Literals.md",
-    "Notes/Ch03/3.10/3.10.7 Constant Expressions.md",
-    "Notes/Ch03/3.9 Keywords.md",
-    "Notes/Ch03/3.8 Identifiers.md",
-    "Notes/Ch03/3.6 White Space.md",
-    "Notes/Ch03/3.4 Line Terminators.md",
-    "Notes/Ch03/3.3 Unicode Escapes.md",
-    "Notes/Ch03/3.2 Lexical Translations.md",
-    "Notes/Ch03/3.1 Unicode.md",
-    "Notes/Ch03/3.12 Operators.md",
-    "Notes/Ch03/3.11 Separators.md",
-    "Notes/Ch03/3.7 Comments.md",
-    "Notes/Ch03/3.10/3.10.1 Integer Literals.md",
-    "Notes/Ch03/3.10/3.10.5 String Literals.md",
-    "Notes/Ch03/3.10/3.10.4 Character Literals.md",
-    "Notes/Ch03/3.10/3.10.2 Floating-Point Literals.md",
-    "Notes/Ch03/3.10/3.10.8 JVM Representation (OK).md",
-    "Notes/Ch03/3.10/3.10.0 Лексическая стадия и Unicode Translation (OK).md",
-    "Sources/Mughal 1Z0-830.md",
+    "Notes/Ch04/4.2/4.2.2 byte.md",
+    "Notes/Ch04/4.2/4.2.6 char.md",
+    "Notes/Ch04/4.2/4.2.5 long.md",
+    "Notes/Ch04/4.2/4.2.4 int.md",
+    "Notes/Ch04/4.2/4.2.3 short.md",
+    "Notes/Ch04/4.2/4.2.1 Integral Types.md",
+    "Notes/Ch04/4.2/4.2.0 Overview.md",
+    "Notes/Ch04/4.13 Common Mistakes and Pitfalls.md",
+    "Notes/Ch04/4.12 Variables.md",
+    "Notes/Ch04/4.11 Where Types Are Used.md",
+    "Notes/Ch04/4.4–4.9 Generic Types in the Type System.md",
+    "Notes/Ch04/4.3 Reference Types and Values.md",
+    "Notes/Ch04/4.2/4.2.15 Choosing a Primitive Type — Practical Guidelines and Pitfalls.md",
+    "Notes/Ch04/4.2/4.2.14 Default Values and Initialization.md",
+    "Notes/Ch04/4.2/4.2.13 Boxing and Unboxing.md",
+    "Notes/Ch04/4.2/4.2.12 Promotions and Conversions.md",
+    "Notes/Ch04/4.2/4.2.11 Operations on Primitive Types.md",
+    "Notes/Ch04/4.2/4.2.9 double.md",
+    "Notes/Ch04/4.2/4.2.8 float.md",
+    "Notes/Ch04/4.2/4.2.10 boolean.md",
+    "Notes/Ch04/4.1/4.1.8 Common Pitfalls.md",
     "Sources/Mughal 1Z0-829.pdf",
     "Sources/Mughal 1Z0-830.pdf",
     "Sources/Boyarsky 1Z0-830.pdf",
