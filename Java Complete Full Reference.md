@@ -15,21 +15,10 @@ Tags: #Content
 ### [[Chapter 1. Introduction]]
 ### [[Chapter 2. Grammars]]
 ### [[Chapter 3. Lexical Structure]]
-
-
 ### [[Chapter 4. Types, Values, and Variables]]
+[[Chapter 5. Conversions and Contexts]]
 
 
-### Chapter 5. Conversions and Contexts
-5.1 Conversion Contexts  
-5.2 Assignment Contexts  
-5.3 Casting Contexts  
-5.4 String Conversion  
-5.5 Numeric Promotions  
-5.6 Unboxing Conversion  
-5.7 Value Set Conversion  
-5.8 Widening and Narrowing Reference Conversions
-5.9 **(NEW)** Типичные ошибки: неявные сужающие контексты, потеря точности при `float`/`double`, `NaN`-ловушки в сравнениях, boxing в switch/generics
 
 ### Chapter 6. Names, Scope, and Access Control
 6.1 Declarations  
