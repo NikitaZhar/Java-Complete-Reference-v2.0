@@ -1,0 +1,25 @@
+{
+  "sourceRows": 3086,
+  "eligible": 2203,
+  "unresolved": 883,
+  "groups": 1691,
+  "mergedGroups": 512,
+  "singleSource": 1179,
+  "candidates": 259,
+  "sourceCounts": {
+    "01 — JLS SE 25.md": 598,
+    "02 — JVMS SE 25.md": 445,
+    "03 — Boyarsky 1Z0-829.md": 533,
+    "04 — Boyarsky 1Z0-830.md": 483,
+    "05 — Mughal 1Z0-829.md": 275,
+    "06 — Mughal 1Z0-830.md": 277,
+    "07 — Engineering scope.md": 475
+  },
+  "audit": {
+    "sourceKeysUnique": true,
+    "eligibleAssignedExactlyOnce": true,
+    "groupRecords": 2203,
+    "mergeGroupsValid": true,
+    "engineeringAutoMerged": 0
+  }
+}

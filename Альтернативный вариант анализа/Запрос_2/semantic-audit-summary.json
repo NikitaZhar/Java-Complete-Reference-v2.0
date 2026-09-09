@@ -1,0 +1,13 @@
+{
+  "candidatePairs": 259,
+  "decisions": {
+    "MERGE_WITH_SPLIT": 186,
+    "RELATED": 19,
+    "MERGE": 26,
+    "KEEP_SEPARATE": 28
+  },
+  "semanticClusters": 1501,
+  "normalizedGroups": 1691,
+  "allGroupsMapped": true,
+  "sourceRecordsInClusters": 2203
+}

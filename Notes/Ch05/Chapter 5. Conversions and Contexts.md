@@ -45,3 +45,47 @@ tags: [topic/conversions, concept/conversion, concept/conversion-context, src/jl
 [[5.12 Numeric Contexts (Numeric Promotions)]] — унарное и бинарное числовое продвижение операндов.
 
 [[5.13 Common Mistakes and Pitfalls]] — сводный блок ошибок уровня главы.
+
+
+
+
+Повторный аудит завершён. Предыдущая предложенная структура была чрезмерно раздроблена: основные пробелы я определил верно, но организация из 21 раздела плохо соответствовала принципу проекта «удобство важнее копирования JLS».
+
+Полный повторный аудит с матрицей покрытия, фактическими ошибками и сравнением двух структур сохранён здесь:
+
+[[Повторный аудит Chapter 5]]
+
+Главные результаты:
+
+- Текущая глава опирается преимущественно на модель JLS SE 16 и экзаменационные книги.
+- `Value Set Conversion` ошибочно остаётся актуальным conversion kind: оно присутствовало в [JLS SE 16](https://docs.oracle.com/javase/specs/jls/se16/html/jls-5.html), но отсутствует в [JLS SE 25](https://docs.oracle.com/javase/specs/jls/se25/html/jls-5.html).
+- Не хватает `Widening and Narrowing Primitive Conversion` — отдельного случая `byte → int → char`.
+- Отсутствуют Testing Contexts.
+- Numeric Contexts описаны по старой схеме unary/binary promotion: нет numeric choice context и general numeric promotion.
+- Почти отсутствуют target typing и poly expressions.
+- Reference и casting conversions сокращены настолько, что не покрывают arrays, interfaces, sealed disjointness, checked/unchecked и составные conversion chains.
+- Unchecked и capture conversion только названы, хотя матрица владения объявляет Ch5 домом всех видов преобразований.
+- String conversion описано не полностью эквивалентно JLS.
+- В `5.13` обнаружена самостоятельная ошибка: утверждение, что и `==`, и `!=` с `NaN` дают `false`, противоречит следующему примеру — `NaN != NaN` даёт `true`.
+
+Исправление моего прошлого ответа: JLS говорит о семи видах контекстов, считая strict и loose invocation отдельно, но объединяет их в одном §5.3. Поэтому учебнику не нужны два отдельных invocation-раздела — достаточно одного раздела с двумя режимами.
+
+Новая рекомендуемая структура содержит 15 разделов:
+
+1. Target Type, Poly Expressions, and Conversions
+2. Conversion Kinds — Complete Map
+3. Primitive Conversions
+4. Reference Conversions
+5. Boxing and Unboxing Conversions
+6. Unchecked and Capture Conversions — Language Boundary
+7. String Conversion and Forbidden Conversions
+8. Conversion Contexts — Complete Matrix
+9. Assignment Contexts
+10. Invocation Contexts and Overload Applicability
+11. String Contexts
+12. Casting Contexts
+13. Numeric Contexts and Numeric Promotion
+14. Testing Contexts and Pattern Compatibility
+15. Diagnostic Guide and Common Pitfalls
+
+Итоговый вердикт остаётся прежним, но теперь точнее: текущий `ch5` — хороший черновик базовой механики преобразований, однако не полный раздел профессионального справочника по Java SE 25. Репозиторий я не изменял; создан только отчёт аудита.

@@ -25,3 +25,46 @@ tags: [topic/types, src/jls, src/oracle]
 [[4.5 Variables]] — виды переменных, значения по умолчанию, `final` и фактически финальные, вывод типа через `var`; обязательная инициализация (definite assignment) — дом Ch. 16.
 
 [[4.6 Common Mistakes and Pitfalls]] — сквозной сводный блок ошибок уровня главы.
+
+[[Повторный аудит Chapter 4]]
+
+Повторный аудит проведён с нуля.
+
+Результат второго прохода:
+
+- Основные выводы первого аудита подтвердились.
+- Полностью ошибочных ключевых замечаний первого аудита не обнаружено.
+- Два вывода потребовали смягчения:
+    - «значение принадлежит ровно одному типу» — это не простая локальная ошибка, а смешение compile-time type, runtime class и value compatibility;
+    - несогласованность source-тегов пока нельзя считать доказанной без provenance-проверки каждого фрагмента.
+- Найдено 12 дополнительных проблем, отсутствовавших в первом отчёте.
+
+Наиболее важные новые находки:
+
+- `List<? extends Object>` неверно назван «только читаемым».
+- `Double.isNaN` — рекомендуемый, но не единственный корректный тест: `x != x` тоже определяет NaN.
+- Универсальный рецепт `abs(a-b) < 1e-9` ошибочно объявлен всегда правильным.
+- Мотивация integer overflow и promotion через скорость/JVM opcodes подана как установленный факт без источника.
+- Утверждения о памяти и производительности `short`, `byte`, `int` зависят от JVM/JIT.
+- Helpful NPE не гарантирует восстановление имени локальной переменной во всех случаях.
+- `4.2.13 Boxing and Unboxing` — фактически пустой структурный redirect.
+- Common Mistakes дублируются на трёх уровнях и уже расходятся по формулировкам.
+
+Независимо пересобранная структура почти совпала с первой, что усиливает достоверность результата. Отличие: теперь предлагается 14 разделов вместо 13 — initialization, `final` и `var` не следует объединять:
+
+1. Type-System Guarantees and Their Boundaries
+2. Types, Values, Variables, Expressions, and Results
+3. Primitive Types and Values
+4. Reference Types, Objects, References, and null
+5. Generic-Related Type Forms — Boundary Overview
+6. Type Identity, Static Type, and Runtime Class
+7. Subtyping and Supertypes
+8. Type Contexts
+9. Variables, Stored Values, and Pass-by-Value
+10. The Eight Kinds of Variables
+11. Initial Values and Definite Assignment Boundary
+12. final, Blank Final, Constant, and Effectively Final Variables
+13. Local Variable Type Inference
+14. Diagnostic Guide and Pitfalls
+
+Консолидированный вывод: `ch4` имеет хороший учебный фундамент, но статус `done` не оправдан. Уверенность в этом выводе после независимого повторного прохода существенно выше. Репозиторий не изменялся; добавлен только новый отчёт.
